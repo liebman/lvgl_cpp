@@ -218,6 +218,26 @@ void LVBase::setStylePadInner(lv_part_style_t part, lv_state_t state, lv_style_i
     lv_obj_set_style_local_pad_inner(_obj, part, state, value);
 }
 
+void LVBase::setStylePadTop(lv_part_style_t part, lv_state_t state, lv_style_int_t value)
+{
+    lv_obj_set_style_local_pad_top(_obj, part, state, value);
+}
+
+void LVBase::setStylePadBottom(lv_part_style_t part, lv_state_t state, lv_style_int_t value)
+{
+    lv_obj_set_style_local_pad_bottom(_obj, part, state, value);
+}
+
+void LVBase::setStylePadLeft(lv_part_style_t part, lv_state_t state, lv_style_int_t value)
+{
+    lv_obj_set_style_local_pad_left(_obj, part, state, value);
+}
+
+void LVBase::setStylePadRight(lv_part_style_t part, lv_state_t state, lv_style_int_t value)
+{
+    lv_obj_set_style_local_pad_right(_obj, part, state, value);
+}
+
 void LVBase::setStyleBorderWidth(lv_part_style_t part, lv_state_t state, lv_style_int_t value)
 {
     lv_obj_set_style_local_border_width(_obj, part, state, value);

@@ -43,6 +43,10 @@ class LVBase
         void setStyleBackgroundColor(lv_part_style_t part, lv_state_t state, lv_color_t color);
         void setStyleValueStr(lv_part_style_t part, lv_state_t state, const char* value);
         void setStylePadInner(lv_part_style_t part, lv_state_t state, lv_style_int_t value);
+        void setStylePadTop(lv_part_style_t part, lv_state_t state, lv_style_int_t value);
+        void setStylePadBottom(lv_part_style_t part, lv_state_t state, lv_style_int_t value);
+        void setStylePadLeft(lv_part_style_t part, lv_state_t state, lv_style_int_t value);
+        void setStylePadRight(lv_part_style_t part, lv_state_t state, lv_style_int_t value);
         void setStyleBorderWidth(lv_part_style_t part, lv_state_t state, lv_style_int_t value);
         void setStyleMarginTop(lv_part_style_t part, lv_state_t state, lv_style_int_t value);
         void setStyleMarginBottom(lv_part_style_t part, lv_state_t state, lv_style_int_t value);
