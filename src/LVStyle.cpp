@@ -131,3 +131,12 @@ void LVStyle::setClipCorner(lv_state_t state, bool en)
     lv_style_set_clip_corner(&_style, state, en);
 }
 
+void LVStyle::setLineWidth(lv_state_t state, lv_style_int_t width)
+{
+    lv_style_set_line_width(&_style, state, width);
+}
+
+void LVStyle::setSize(lv_state_t state, lv_style_int_t size)
+{
+    lv_style_set_size(&_style, state, size);
+}

@@ -40,7 +40,12 @@ class LVStyle
         void setClipCorner(lv_state_t state, bool en);
 
         void setTextColor(lv_state_t state, lv_color_t color);
-        void setTextFont(lv_state_t state, lv_font_t* font);    
+        void setTextFont(lv_state_t state, lv_font_t* font);
+
+        void setLineWidth(lv_state_t state, lv_style_int_t width);
+
+        void setSize(lv_state_t state, lv_style_int_t size);
+
     protected:
         lv_style_t _style;
 };
