@@ -1,6 +1,6 @@
 #ifndef _LV_BASE_CPP_H_
 #define _LV_BASE_CPP_H_
-#include "lvgl/lvgl.h"
+#include "lvgl.h"
 #include <functional>
 #include "LVStyle.h"
 
