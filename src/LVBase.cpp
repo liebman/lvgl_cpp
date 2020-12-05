@@ -76,6 +76,11 @@ void LVBase::realign()
     lv_obj_realign(_obj);
 }
 
+void LVBase::setParent(LVBase* parent)
+{
+    lv_obj_set_parent(_obj, parent->_obj);
+}
+
 void LVBase::setPos(lv_coord_t x, lv_coord_t y)
 {
     lv_obj_set_pos(_obj, x, y);
