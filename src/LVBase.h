@@ -19,6 +19,7 @@ class LVBase
         void alignX(LVBase* ref, lv_align_t align, lv_coord_t x_ofs);
         void alignY(LVBase* ref, lv_align_t align, lv_coord_t y_ofs);
         void realign();
+        void setParent(LVBase* parent);
         void setPos(lv_coord_t x, lv_coord_t y);
         void setX(lv_coord_t x);
         void setY(lv_coord_t y);
