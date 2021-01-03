@@ -29,7 +29,7 @@
 class LVContainer : public LVBase
 {
     public:
-        LVContainer(const LVBase* parent);
+        explicit LVContainer(const LVBase* parent);
         virtual ~LVContainer();
         void setLayout(lv_layout_t layout);
         void setFit(lv_fit_t fit);

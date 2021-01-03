@@ -30,7 +30,7 @@
 class LVTabView : public LVBase
 {
     public:
-        LVTabView(const LVBase* parent);
+        explicit LVTabView(const LVBase* parent);
         virtual ~LVTabView();
 
         void clean();

@@ -29,8 +29,8 @@
 class LVPage : public LVBase
 {
     public:
-        LVPage(const LVBase* parent);
-        LVPage(lv_obj_t* page);
+        explicit LVPage(const LVBase* parent);
+        explicit LVPage(lv_obj_t* page);
         virtual ~LVPage();
         void setScrollBarMode(lv_scrollbar_mode_t mode);
 };

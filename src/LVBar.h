@@ -29,7 +29,7 @@
 class LVBar : public LVBase
 {
     public:
-        LVBar(const LVBase* parent);
+        explicit LVBar(const LVBase* parent);
         virtual ~LVBar();
         void setValue(int16_t value, bool animate = false);
         void setRange(int16_t min, int16_t max);

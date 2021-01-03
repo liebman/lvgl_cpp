@@ -30,7 +30,7 @@
 class LVKeyboard : public LVBase
 {
     public:
-        LVKeyboard(const LVBase* parent);
+        explicit LVKeyboard(const LVBase* parent);
         virtual ~LVKeyboard();
 
         void setTextArea(LVTextArea* ta);

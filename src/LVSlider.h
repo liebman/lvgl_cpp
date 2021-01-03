@@ -29,7 +29,7 @@
 class LVSlider : public LVBase
 {
     public:
-        LVSlider(const LVBase* parent);
+        explicit LVSlider(const LVBase* parent);
         virtual ~LVSlider();
         void setValue(int16_t value, bool animate = false);
         int16_t getValue();

@@ -29,7 +29,7 @@
 class LVChart : public LVBase
 {
     public:
-        LVChart(const LVBase* parent);
+        explicit LVChart(const LVBase* parent);
         virtual ~LVChart();
         lv_chart_series_t* addSeries(lv_color_t color);
         void clearSeries(lv_chart_series_t* series);

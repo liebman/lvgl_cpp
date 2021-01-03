@@ -29,7 +29,7 @@
 class LVCanvas : public LVBase
 {
     public:
-        LVCanvas(const LVBase* parent);
+        explicit LVCanvas(const LVBase* parent);
         virtual ~LVCanvas();
         void setBuffer(void* buffer, lv_coord_t width, lv_coord_t height, lv_img_cf_t color_format);
         void setPalette(uint8_t index, lv_color_t color);

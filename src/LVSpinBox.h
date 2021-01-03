@@ -29,7 +29,7 @@
 class LVSpinBox : public LVBase
 {
     public:
-        LVSpinBox(const LVBase* parent);
+        explicit LVSpinBox(const LVBase* parent);
         virtual ~LVSpinBox();
         void setRollover(bool en);
         void setValue(int32_t value);

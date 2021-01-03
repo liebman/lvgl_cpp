@@ -29,7 +29,7 @@
 class LVButton : public LVBase
 {
     public:
-        LVButton(const LVBase* parent);
+        explicit LVButton(const LVBase* parent);
         virtual ~LVButton();
         void setState(lv_btn_state_t state);
         lv_btn_state_t getState();

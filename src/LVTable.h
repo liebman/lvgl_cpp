@@ -29,7 +29,7 @@
 class LVTable : public LVBase
 {
     public:
-        LVTable(const LVBase* parent);
+        explicit LVTable(const LVBase* parent);
         virtual ~LVTable();
         void setRowCount(uint16_t cnt);
         void setColumnCount(uint16_t cnt);

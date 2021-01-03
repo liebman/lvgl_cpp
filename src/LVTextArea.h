@@ -29,7 +29,7 @@
 class LVTextArea : public LVBase
 {
     public:
-        LVTextArea(const LVBase* parent);
+        explicit LVTextArea(const LVBase* parent);
         virtual ~LVTextArea();
         void addChar(uint32_t c);
         void addText(const char* txt);

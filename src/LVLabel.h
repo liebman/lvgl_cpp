@@ -29,7 +29,7 @@
 class LVLabel : public LVBase
 {
     public:
-        LVLabel(const LVBase* parent);
+        explicit LVLabel(const LVBase* parent);
         virtual ~LVLabel();
         void setText(const char* text);
         const char* getText();

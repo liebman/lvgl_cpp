@@ -29,7 +29,7 @@
 class LVLED : public LVBase
 {
     public:
-        LVLED(const LVBase* parent);
+        explicit LVLED(const LVBase* parent);
         virtual ~LVLED();
         void set(bool on);
 };

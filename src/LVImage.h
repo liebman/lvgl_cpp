@@ -29,7 +29,7 @@
 class LVImage : public LVBase
 {
     public:
-        LVImage(const LVBase* parent);
+        explicit LVImage(const LVBase* parent);
         virtual ~LVImage();
         void setSource(lv_img_dsc_t* img);
         void setAutoResize(bool auto_resize);
