@@ -84,6 +84,9 @@ class LVBase
         void setStyleMarginHorizontal(lv_part_style_t part, lv_state_t state, lv_style_int_t value);
         void setStyleMarginVertical(lv_part_style_t part, lv_state_t state, lv_style_int_t value);
         void setStyleMarginAll(lv_part_style_t part, lv_state_t state, lv_style_int_t value);
+        void setStyleTextFont(lv_part_style_t part, lv_state_t state, lv_font_t* font);
+        void setStyleTextColor(lv_part_style_t part, lv_state_t state, lv_color_t color);
+    
         static const char* getEventName(lv_event_t event);
 
         // block copy constructors

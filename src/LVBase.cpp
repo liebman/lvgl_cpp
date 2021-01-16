@@ -306,7 +306,16 @@ void LVBase::setStyleMarginAll(lv_part_style_t part, lv_state_t state, lv_style_
 {
     lv_obj_set_style_local_margin_all(_obj, part, state, value);
 }
- 
+
+void LVBase::setStyleTextFont(lv_part_style_t part, lv_state_t state, lv_font_t* font)
+{
+    lv_obj_set_style_local_text_font(_obj, part, state, font);
+}
+
+void LVBase::setStyleTextColor(lv_part_style_t part, lv_state_t state, lv_color_t color)
+{
+    lv_obj_set_style_local_text_color(_obj, part, state, color);
+}
 
 const char* LVBase::getEventName(lv_event_t event)
 {
