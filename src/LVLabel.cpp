@@ -39,6 +39,16 @@ void LVLabel::setText(const char* text)
     lv_label_set_text(getObj(), text);
 }
 
+void LVLabel::setTextFmt(const char* fmt, ...)
+{
+    va_list args;
+    va_start(args, fmt);
+    const char* text = _lv_txt_set_text_vfmt(fmt, args);
+    va_end(args);
+    lv_label_set_text(getObj(), text);
+    lv_mem_free(text);
+}
+
 const char* LVLabel::getText()
 {
     return lv_label_get_text(getObj());

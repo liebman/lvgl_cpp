@@ -32,6 +32,7 @@ class LVLabel : public LVBase
         explicit LVLabel(const LVBase* parent);
         virtual ~LVLabel();
         void setText(const char* text);
+        void setTextFmt(const char* fmt, ...);
         const char* getText();
         void setStaticText(const char* text);
         void setLabelAlign(lv_label_align_t align);
