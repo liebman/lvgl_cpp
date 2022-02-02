@@ -38,7 +38,10 @@ class LVTabView : public LVBase
         void setTabActive(uint16_t id, lv_anim_enable_t anim);
         void setAnimationTime(uint16_t time);
         void setButtonsPos(lv_tabview_btns_pos_t btns_pos);
-
+        uint16_t getTabAct();
+        uint16_t getTabCount();
+        LVPage* getTab(uint16_t idx);
+        LVPage* getActiveTab();
 #if LV_VERSION_CHECK(6,0,0) // these are not available in 7.x
         void setSliding(bool en);
         void setButtonsHidden(bool en);

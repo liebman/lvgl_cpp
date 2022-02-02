@@ -63,6 +63,29 @@ void LVTabView::setButtonsPos(lv_tabview_btns_pos_t btns_pos)
     lv_tabview_set_btns_pos(getObj(), btns_pos);
 }
 
+uint16_t LVTabView::getTabAct()
+{
+    return lv_tabview_get_tab_act(getObj());
+}
+
+uint16_t LVTabView::getTabCount()
+{
+    return lv_tabview_get_tab_count(getObj());
+}
+
+LVPage* LVTabView::getTab(uint16_t idx)
+{
+    lv_obj_t* obj = lv_tabview_get_tab(getObj(), idx);
+    LVPage* page = (LVPage*)lv_obj_get_user_data(obj);
+    assert(page != nullptr);
+    return page;
+}
+
+LVPage* LVTabView::getActiveTab()
+{
+    return getTab(getTabAct());
+}
+
 #if LV_VERSION_CHECK(6,0,0) // these are not available in 7.x
 void LVTabView::setSliding(bool en)
 {
